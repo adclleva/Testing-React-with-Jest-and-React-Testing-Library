@@ -3,7 +3,7 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByRole(`link`, { name: /learn react/i});
   expect(linkElement).toBeInTheDocument();
 });
 
@@ -100,4 +100,16 @@ test('renders learn react link', () => {
  * - involes collaboaration between lots of roles
  *  - developers, TA< business partners, etc.
  * - defines process for different groups to intereact
+ */
+
+/**
+ * Testing lIbrary recommends finding elements by accessibility handles:
+ *  https://testing-library.com/docs/queries/about/#priority
+ * 
+ * create-react-apps' example test uses getByTest
+ * - ok for non-interactice elements
+ *  - better: getByRole
+ * 
+ * Roles documentation: https://www.w3.org/TR/wai-aria/#role_definitions
+ * - some elements have built-in roles: button, a
  */
