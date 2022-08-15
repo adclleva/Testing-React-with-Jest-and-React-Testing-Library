@@ -3,7 +3,7 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn testing/i);
+  const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
 
@@ -42,4 +42,18 @@ test('renders learn react link', () => {
  * Only run tests related to these files
  * No changes? No tests
  * - Type a to run all tests
+ */
+
+/**
+ * how does Jest work?
+ * 
+ * global test method has two arguments
+ * - string description
+ * - test function
+ * 
+ * Test fails if error is thrown when running function
+ * assertiosn thow errors when expectations fails
+ * 
+ * No error -> tests pass
+ * - empty test passes
  */
