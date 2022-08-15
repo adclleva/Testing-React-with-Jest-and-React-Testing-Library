@@ -57,3 +57,38 @@ test('renders learn react link', () => {
  * No error -> tests pass
  * - empty test passes
  */
+
+/**
+ * What does RTL Do?
+ * 
+ * Creates virtual DOM for testing
+ * - and utilities for interacting with DOM
+ * Allows testing wihout a browser
+ */
+
+/**
+ * Types of Tests
+ * Unit Tests:
+ * - Tests one unit of code in isolation
+ * Integration tests:
+ * - How multiple units work together
+ * Functional Tests: 
+ * Tests a particular function of software
+ * Acceptance / End-to-end (E2E) Tests
+ * - Use actual browser and serve (Cypress, Selenium)
+ * 
+ */
+
+/**
+ * Functional Testing
+ * different mindest from unit testing
+ */
+
+/**
+ * Functional Testing
+ * different mindset from unit testing
+ * include all relevant units, test behavior
+ * Close to how users inteact with software 
+ * robust tests
+ * more difficult to debug failing tests
+ */
