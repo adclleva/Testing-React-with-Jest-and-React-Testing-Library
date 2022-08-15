@@ -92,3 +92,12 @@ test('renders learn react link', () => {
  * robust tests
  * more difficult to debug failing tests
  */
+
+/**
+ * TDD vs BDD
+ * Testing Library encourages testing bahavior over implementation
+ * BDD is very explicitly defined
+ * - involes collaboaration between lots of roles
+ *  - developers, TA< business partners, etc.
+ * - defines process for different groups to intereact
+ */
