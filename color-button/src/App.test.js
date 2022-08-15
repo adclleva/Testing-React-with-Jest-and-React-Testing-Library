@@ -18,3 +18,28 @@ test('renders learn react link', () => {
  * DOM-based matchers
  *  ex: toBeVisible() or toBeChecked()
  */
+
+/**
+ * RTL helps with:
+ * - rendering components into virtual DOM
+ * - searching virtual DOM
+ * - Interacting with virtual DOM
+ * 
+ * Needs a test runner:
+ * - find tests, run them. make assertions
+ * 
+ * Jest:
+ * - is recommended by Testing Library
+ * - comes with create-react-app
+ * 
+ * npm test runs an npm script that runs Jest in watch mode
+ */
+
+/**
+ * watchmode
+ * 
+ * watch for changes in files since last commit
+ * Only run tests related to these files
+ * No changes? No tests
+ * - Type a to run all tests
+ */
