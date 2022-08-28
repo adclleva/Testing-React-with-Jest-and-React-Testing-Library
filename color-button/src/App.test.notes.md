@@ -96,7 +96,7 @@
  */
 
 /**
- * Testing lIbrary recommends finding elements by accessibility handles:
+ * Testing library recommends finding elements by accessibility handles:
  *  https://testing-library.com/docs/queries/about/#priority
  * 
  * create-react-apps' example test uses getByTest
@@ -106,3 +106,5 @@
  * Roles documentation: https://www.w3.org/TR/wai-aria/#role_definitions
  * - some elements have built-in roles: button, a
  */
+
+ 

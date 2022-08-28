@@ -1,5 +1,5 @@
 import { render, screen , fireEvent} from '@testing-library/react';
-import App from './App';
+import App, { replaceCamelwithSpaces } from './App';
 
 test('button has correct initial color', () => {
   render(<App />)
@@ -88,4 +88,27 @@ test('Clicked disabled button has gray background and reverts to blue', () => {
   expect(colorButton).toHaveStyle('background-color: blue')
 })
 
+// for Unit testing a function
+describe('spaces before camel-case capital letters', () => {
+  test('Works for no inner capital letters', () => {
+    expect(replaceCamelwithSpaces('Red')).toBe('Red')
+  });
 
+  test('Works for one inner capital letter', () => {
+    expect(replaceCamelwithSpaces('MidnightBlue')).toBe('Midnight Blue')
+  })
+
+  test('Works for multiple inner capital letters', () => {
+    expect(replaceCamelwithSpaces('MediumVioletRed')).toBe('Medium Violet Red') 
+  })
+})
+
+/** Unit Testing Functions
+ * Functions separate from components
+ * - Used by several components
+ * - Complex logix
+ * 
+ * Unit test if
+ * - Complex logic difficult to test via functional tests
+ * - Too many edge cases
+ */
