@@ -35,7 +35,12 @@ test('initial conditions', () => {
 test('Checkbox disables button on first click and enables on second click', () => {
   render(<App />)
 
-  const checkbox = screen.getByRole('checkbox')
+  /**
+   * accessible name is for simple cases equal to e.g. the label of a form element,
+   * or the text content of a button 
+   * or the value of the aria-label
+   */
+  const checkbox = screen.getByRole('checkbox', { name: 'Disable Button'})
   const button = screen.getByRole('button')
 
   fireEvent.click(checkbox);
