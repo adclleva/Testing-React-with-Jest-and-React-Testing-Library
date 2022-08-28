@@ -107,4 +107,35 @@
  * - some elements have built-in roles: button, a
  */
 
- 
+ /** Unit Testing Functions
+ * Functions separate from components
+ * - Used by several components
+ * - Complex logix
+ * 
+ * Unit test if
+ * - Complex logic difficult to test via functional tests
+ * - Too many edge cases
+ */
+
+
+/** When to Unit Test?
+ * For complicated functions, unit tests help with:
+ * - covering all possible edge cases
+ * - determinging what caused functional tests to fail
+ * Issue with functional tests:
+ * - high-level makes them resistant to refactors
+ * - high-level makes them difficult to diagnose
+ */
+
+ /**
+ * Test interactivity using fireEvent
+ * 
+ * jest-dom assertions:
+ * - toBeEnabled()
+ * - toBeDisabled()
+ * - toBeChecked()
+ * 
+ * getByRole option { name: }
+ * Jest describe to group tests
+ * Unit testing functions
+ */
