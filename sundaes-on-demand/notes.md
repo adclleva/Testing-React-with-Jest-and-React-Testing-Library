@@ -55,3 +55,13 @@
 - async waitForElementToBeRemoved for element that was there and then disappeared
 - test not wrated in act(...) warning
   - Determine how component is getting updated async and account for in tests
+
+---
+
+## Mock Service Worker Setup
+
+- npm install msw
+- Create handlers
+- Crete test server
+- Make sure test server listens during all tests
+  - reset after each test
