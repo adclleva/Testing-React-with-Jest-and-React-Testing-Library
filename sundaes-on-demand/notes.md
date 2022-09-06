@@ -65,3 +65,9 @@
 - Crete test server
 - Make sure test server listens during all tests
   - reset after each test
+
+---
+
+## await findBy
+
+When you are waiting for something to appear asynchronously on the page, you must use `await findBy`
