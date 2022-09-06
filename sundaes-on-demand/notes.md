@@ -86,3 +86,11 @@ When you are waiting for something to appear asynchronously on the page, you mus
 
 - test.skip, to skipping the test
 - test.only to testing the only test
+
+---
+
+## Review of Alert Testing
+
+- Override MSW reponse for individual tests
+- waitFor for tests where awiat findBy\* isn't enough
+- Misleading Unable to find role="alert" error
