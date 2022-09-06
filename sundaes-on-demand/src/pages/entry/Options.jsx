@@ -15,7 +15,6 @@ export default function Options({ optionType }) {
       .get(`https://localhost:3030/${optionType}`)
       .then((response) => setItems(response.data))
       .catch((error) => {
-        // TODO:handle error response
         setError(true);
       });
   }, [optionType]);

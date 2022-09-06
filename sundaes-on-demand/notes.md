@@ -79,3 +79,10 @@ When you are waiting for something to appear asynchronously on the page, you mus
 - Jest debugging tools in this section
   - running only one test file
   - running only one test within a file
+
+---
+
+## Running Selected Tests
+
+- test.skip, to skipping the test
+- test.only to testing the only test
