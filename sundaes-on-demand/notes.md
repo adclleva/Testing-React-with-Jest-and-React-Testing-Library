@@ -71,3 +71,11 @@
 ## await findBy
 
 When you are waiting for something to appear asynchronously on the page, you must use `await findBy`
+
+---
+
+## Jest Debugging Tools
+
+- Jest debugging tools in this section
+  - running only one test file
+  - running only one test within a file
