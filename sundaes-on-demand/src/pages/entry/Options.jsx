@@ -7,7 +7,6 @@ import ScoopOption from "./ScoopOption";
 import ToppingOption from "./ToppingOption";
 import { useOrderDetails } from "../../contexts/OrderDetails";
 import { formatCurrency } from "../../utilities";
-import { useOrderDetails } from "../../contexts/OrderDetails";
 
 export default function Options({ optionType }) {
   const [items, setItems] = useState([]);
