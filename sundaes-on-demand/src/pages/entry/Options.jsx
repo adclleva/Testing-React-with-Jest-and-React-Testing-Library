@@ -1,30 +1,28 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
-import { pricePerItem } from "../../constants";
-import AlertBanner from "../common/AlertBanner";
 import ScoopOption from "./ScoopOption";
 import ToppingOption from "./ToppingOption";
-import { useOrderDetails } from "../../contexts/OrderDetails";
+import AlertBanner from "../common/AlertBanner";
+import { pricePerItem } from "../../constants";
 import { formatCurrency } from "../../utilities";
+import { useOrderDetails } from "../../contexts/OrderDetails";
 
 export default function Options({ optionType }) {
   const [items, setItems] = useState([]);
   const [error, setError] = useState(false);
-  const [orderDetails, updateItemCount] = useOrderDetails();
   const { totals } = useOrderDetails();
 
-  // optionType is 'scoops' or 'toppings'
+  // optionType is 'scoops' or 'toppings
   useEffect(() => {
     axios
-      .get(`https://localhost:3030/${optionType}`)
+      .get(`http://localhost:3030/${optionType}`)
       .then((response) => setItems(response.data))
-      .catch((error) => {
-        setError(true);
-      });
+      .catch((error) => setError(true));
   }, [optionType]);
 
   if (error) {
+    // @ts-ignore
     return <AlertBanner />;
   }
 
@@ -36,7 +34,6 @@ export default function Options({ optionType }) {
       key={item.name}
       name={item.name}
       imagePath={item.imagePath}
-      updateItemCount={(itemName, newItemCount) => updateItemCount(itemName, newItemCount, optionType)}
     />
   ));
 

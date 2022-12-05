@@ -1,6 +1,6 @@
-import { Container } from "react-bootstrap";
-import { OrderDetailsProvider } from "./contexts/OrderDetails";
+import Container from "react-bootstrap/Container";
 import OrderEntry from "./pages/entry/OrderEntry";
+import { OrderDetailsProvider } from "./contexts/OrderDetails";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         {/* Summary page and entry page need provider */}
         <OrderEntry />
       </OrderDetailsProvider>
-      {/* confirmation page does not need provider */}
+      {/* Confirmation page does not need provider */}
     </Container>
   );
 }
